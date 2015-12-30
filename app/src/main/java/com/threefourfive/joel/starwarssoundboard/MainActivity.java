@@ -7,11 +7,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     MediaPlayer mplayer;
-    public void onClick1(View view){
-        if(view.getTag()=="0"){
-            mplayer = MediaPlayer.create(this,R.raw.chewbacca_01);
+
+    public void onClick1(View view) {
+        if(view.getTag()=="0") {
+            mplayer = MediaPlayer.create(this, R.raw.r2d2);
             mplayer.start();
         }
+
     }
 
     @Override
